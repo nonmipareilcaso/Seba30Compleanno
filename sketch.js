@@ -118,6 +118,7 @@ class scritta30 {
     }
     textFont(myFontCoiny);
     textSize(width / 8);
+    textAlign(CENTER, CENTER);
     text("30", this.x, this.y);
     pop();
     this.opacity = this.opacity + this.deltaop;
