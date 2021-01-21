@@ -47,8 +47,11 @@ function draw() {
     confettis[i].display();
   }
   
-  for(let i = 0; i < thirties.length; i++){
+  for(let i = (thirties.length - 1); i >= 0; i--){
     thirties[i].display();
+    if(thirties[i].opacity < 0){
+      thirties.splice(i, 1);
+    }
   }
   
 
