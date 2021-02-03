@@ -31,6 +31,7 @@ let thirties = [];
 
 function setup() {
   let myCanvas = createCanvas(windowWidth, windowHeight);
+  myCanvas.position(0, 0);
   frameRate(30);
   for(let i = 0; i < 250; i++){
     confettis[i] = new Confetti();
